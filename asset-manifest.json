@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/levelup-store/static/css/main.d1576ded.css",
+    "main.js": "/levelup-store/static/js/main.6d15be89.js",
+    "static/media/hero.jpg": "/levelup-store/static/media/hero.2545f1f35638bc70483c.jpg",
+    "static/media/Package.jpg": "/levelup-store/static/media/Package.c3333ceb5dfbfcc42263.jpg",
+    "static/media/heroblack.jpg": "/levelup-store/static/media/heroblack.68dc5c5ad8604c940687.jpg",
+    "index.html": "/levelup-store/index.html",
+    "main.d1576ded.css.map": "/levelup-store/static/css/main.d1576ded.css.map",
+    "main.6d15be89.js.map": "/levelup-store/static/js/main.6d15be89.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d1576ded.css",
+    "static/js/main.6d15be89.js"
+  ]
+}
