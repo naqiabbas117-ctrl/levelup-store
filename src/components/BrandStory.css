@@ -70,30 +70,97 @@
   background: #e32920;
 }
 
-/* Tablet */
 
-@media (max-width: 800px) {
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 900px) {
+
   .brand-story {
     grid-template-columns: 1fr;
+    min-height: auto;
   }
 
   .brand-story-image {
-    min-height: 500px;
+    height: 500px;
+    min-height: 0;
   }
 
   .brand-story-content {
-    padding: 70px 7%;
+    padding: 75px 7%;
   }
+
 }
 
-/* Mobile */
 
-@media (max-width: 500px) {
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 600px) {
+
   .brand-story-image {
-    min-height: 400px;
+    height: 360px;
+    min-height: 0;
+  }
+
+  .brand-story-image img {
+    object-position: center;
   }
 
   .brand-story-content {
     padding: 60px 6%;
   }
+
+  .story-label {
+    font-size: 10px;
+    letter-spacing: 2px;
+    margin-bottom: 16px;
+  }
+
+  .brand-story-content h2 {
+    font-size: clamp(38px, 11vw, 52px);
+    line-height: 0.98;
+    letter-spacing: -1.5px;
+  }
+
+  .story-text {
+    font-size: 13px;
+    line-height: 1.75;
+    margin-top: 20px;
+  }
+
+  .story-button {
+    width: 100%;
+    padding: 14px 20px;
+    margin-top: 25px;
+    font-size: 11px;
+  }
+
+}
+
+
+/* =========================
+   SMALL PHONES
+========================= */
+
+@media (max-width: 380px) {
+
+  .brand-story-image {
+    height: 320px;
+  }
+
+  .brand-story-content {
+    padding: 50px 5%;
+  }
+
+  .brand-story-content h2 {
+    font-size: 36px;
+  }
+
+  .story-text {
+    font-size: 12px;
+  }
+
 }

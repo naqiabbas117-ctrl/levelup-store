@@ -149,30 +149,171 @@
   color: white;
 }
 
-/* Tablet */
+
+/* =========================
+   TABLET
+========================= */
 
 @media (max-width: 1000px) {
+
+  .products-section {
+    padding: 85px 6%;
+  }
+
   .products-grid {
     grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-/* Mobile */
-
-@media (max-width: 600px) {
-  .products-section {
-    padding: 70px 5%;
-  }
-
-  .section-heading h2 {
-    font-size: 36px;
-  }
-
-  .products-grid {
-    grid-template-columns: 1fr;
+    gap: 22px;
   }
 
   .product-image {
-    height: 450px;
+    height: 380px;
   }
+
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 600px) {
+
+  .products-section {
+    padding: 65px 5%;
+  }
+
+  .section-heading {
+    margin-bottom: 35px;
+  }
+
+  .section-heading p {
+    font-size: 10px;
+    letter-spacing: 2px;
+  }
+
+  .section-heading h2 {
+    font-size: 34px;
+    letter-spacing: -0.5px;
+  }
+
+  .section-heading span {
+    display: block;
+    font-size: 13px;
+    line-height: 1.6;
+    padding: 0 10px;
+  }
+
+  .products-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+  }
+
+  .product-card:hover {
+    transform: none;
+    box-shadow: none;
+  }
+
+  .product-image {
+    height: 250px;
+  }
+
+  .product-badge {
+    top: 9px;
+    left: 9px;
+    padding: 5px 7px;
+    font-size: 8px;
+    letter-spacing: 0.7px;
+  }
+
+  .product-info {
+    padding: 14px;
+  }
+
+  .product-color {
+    font-size: 9px;
+    letter-spacing: 1.3px;
+    margin-bottom: 5px;
+  }
+
+  .product-info h3 {
+    font-size: 14px;
+    line-height: 1.3;
+    margin-bottom: 7px;
+  }
+
+  .product-price {
+    font-size: 15px;
+    margin-bottom: 12px;
+  }
+
+  .sizes {
+    gap: 4px;
+    margin-bottom: 12px;
+  }
+
+  .sizes span {
+    width: 28px;
+    height: 27px;
+    font-size: 10px;
+  }
+
+  .add-cart {
+    padding: 11px 5px;
+    font-size: 10px;
+    letter-spacing: 0.5px;
+  }
+
+  .view-all {
+    margin-top: 35px;
+  }
+
+  .view-all button {
+    width: 100%;
+    padding: 13px 15px;
+    font-size: 11px;
+  }
+
+}
+
+
+/* =========================
+   SMALL PHONES
+========================= */
+
+@media (max-width: 380px) {
+
+  .products-section {
+    padding-left: 4%;
+    padding-right: 4%;
+  }
+
+  .products-grid {
+    gap: 9px;
+  }
+
+  .product-image {
+    height: 220px;
+  }
+
+  .product-info {
+    padding: 11px;
+  }
+
+  .product-info h3 {
+    font-size: 13px;
+  }
+
+  .product-price {
+    font-size: 14px;
+  }
+
+  .sizes span {
+    width: 25px;
+    height: 25px;
+  }
+
+  .add-cart {
+    font-size: 9px;
+  }
+
 }

@@ -116,23 +116,138 @@
   margin-top: 20px;
 }
 
-/* Tablet */
 
-@media (max-width: 800px) {
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 900px) {
+
   .size-section {
     grid-template-columns: 1fr;
-    gap: 50px;
+    gap: 55px;
+    padding: 90px 6%;
   }
-}
 
-/* Mobile */
-
-@media (max-width: 500px) {
-  .size-section {
-    padding: 70px 6%;
+  .size-description {
+    max-width: 550px;
   }
 
   .size-table-wrapper {
-    padding: 25px;
+    max-width: 100%;
   }
+
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 600px) {
+
+  .size-section {
+    padding: 70px 6%;
+    gap: 40px;
+  }
+
+  .size-label {
+    font-size: 10px;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+  }
+
+  .size-content h2 {
+    font-size: clamp(36px, 10vw, 50px);
+    line-height: 0.98;
+    letter-spacing: -1.5px;
+  }
+
+  .size-description {
+    font-size: 13px;
+    line-height: 1.7;
+    margin-top: 20px;
+  }
+
+  .color-options {
+    margin-top: 28px;
+  }
+
+  .color-options > span {
+    font-size: 10px;
+    letter-spacing: 1.5px;
+  }
+
+  .color-list {
+    gap: 20px;
+  }
+
+  .color-option {
+    font-size: 11px;
+  }
+
+  .white-dot,
+  .black-dot {
+    width: 18px;
+    height: 18px;
+  }
+
+  .size-table-wrapper {
+    padding: 25px 20px;
+  }
+
+  .size-table-wrapper h3 {
+    font-size: 19px;
+    margin-bottom: 20px;
+  }
+
+  .size-table th,
+  .size-table td {
+    padding: 14px 8px;
+  }
+
+  .size-table th {
+    font-size: 9px;
+    letter-spacing: 1.5px;
+  }
+
+  .size-table td {
+    font-size: 13px;
+  }
+
+  .size-note {
+    font-size: 10px;
+    margin-top: 16px;
+  }
+
+}
+
+
+/* =========================
+   SMALL PHONES
+========================= */
+
+@media (max-width: 380px) {
+
+  .size-section {
+    padding: 60px 5%;
+  }
+
+  .size-content h2 {
+    font-size: 34px;
+  }
+
+  .size-table-wrapper {
+    padding: 22px 15px;
+  }
+
+  .size-table th,
+  .size-table td {
+    padding: 12px 6px;
+  }
+
+  .size-table td {
+    font-size: 12px;
+  }
+
 }

@@ -8,7 +8,9 @@
   color: white;
 }
 
-/* IMAGE */
+/* =========================
+   IMAGE
+========================= */
 
 .hero-image {
   position: absolute;
@@ -22,13 +24,10 @@
   object-fit: cover;
   object-position: center;
   display: block;
-
   filter: brightness(0.72) contrast(1.08);
-
   transform: scale(1.04);
   animation: cinematicZoom 12s ease-out forwards;
 }
-
 
 @keyframes cinematicZoom {
   from {
@@ -40,12 +39,13 @@
   }
 }
 
-/* CINEMATIC OVERLAY */
+/* =========================
+   CINEMATIC OVERLAY
+========================= */
 
 .hero-overlay {
   position: absolute;
   inset: 0;
-
   background:
     linear-gradient(
       90deg,
@@ -62,57 +62,52 @@
     );
 }
 
-/* TOP LABEL */
+/* =========================
+   TOP LABEL
+========================= */
 
 .hero-label {
   position: absolute;
   top: 35px;
   left: 7%;
-
   font-size: 11px;
   font-weight: 700;
   letter-spacing: 3px;
-
   color: rgba(255, 255, 255, 0.65);
-
   animation: fadeDown 1s ease forwards;
 }
 
-/* MAIN CONTENT */
+/* =========================
+   MAIN CONTENT
+========================= */
 
 .hero-content {
   position: absolute;
   left: 7%;
   top: 50%;
-
   transform: translateY(-45%);
-
   max-width: 650px;
 }
 
 .hero-eyebrow {
   margin: 0 0 20px;
-
   color: #e32920;
-
   font-size: 13px;
   font-weight: 800;
   letter-spacing: 4px;
-
   animation: fadeUp 1s ease 0.2s both;
 }
+
+/* LEVELUP LOGO */
 
 .levelup-logo {
   display: flex;
   align-items: baseline;
-
   font-family: Arial, Helvetica, sans-serif;
   font-size: clamp(65px, 9vw, 140px);
   font-weight: 800;
-
   line-height: 0.85;
   letter-spacing: -6px;
-
   animation: fadeUp 1s ease 0.35s both;
 }
 
@@ -124,41 +119,33 @@
   color: #a96724;
 }
 
+/* DESCRIPTION */
+
 .hero-description {
   max-width: 420px;
-
   margin: 35px 0 30px;
-
   color: rgba(255, 255, 255, 0.7);
-
   font-size: 15px;
-
   line-height: 1.7;
-
   animation: fadeUp 1s ease 0.5s both;
 }
 
-/* BUTTON */
+/* =========================
+   BUTTON
+========================= */
 
 .hero-button {
   display: inline-flex;
   align-items: center;
   gap: 30px;
-
   padding: 16px 23px;
-
   background: white;
   color: #08090a;
-
   text-decoration: none;
-
   font-size: 12px;
   font-weight: 900;
-
   letter-spacing: 1px;
-
   transition: all 0.3s ease;
-
   animation: fadeUp 1s ease 0.65s both;
 }
 
@@ -176,24 +163,21 @@
   transform: translateX(6px);
 }
 
-/* BOTTOM */
+/* =========================
+   BOTTOM
+========================= */
 
 .hero-bottom {
   position: absolute;
-
   left: 7%;
   right: 7%;
   bottom: 35px;
-
   display: flex;
   justify-content: space-between;
   align-items: center;
-
   font-size: 10px;
   letter-spacing: 2px;
-
   color: rgba(255, 255, 255, 0.55);
-
   animation: fadeUp 1s ease 0.8s both;
 }
 
@@ -207,23 +191,17 @@
   width: 45px;
   height: 1px;
   background: #e32920;
-
   position: relative;
 }
 
 .scroll-line::after {
   content: "";
-
   position: absolute;
-
   left: 0;
   top: -2px;
-
   width: 7px;
   height: 5px;
-
   background: #e32920;
-
   animation: scrollMove 2s ease-in-out infinite;
 }
 
@@ -246,7 +224,9 @@
   margin-left: 5px;
 }
 
-/* ANIMATIONS */
+/* =========================
+   ANIMATIONS
+========================= */
 
 @keyframes fadeUp {
   from {
@@ -272,10 +252,11 @@
   }
 }
 
-/* TABLET */
+/* =========================
+   TABLET
+========================= */
 
 @media (max-width: 800px) {
-
   .cinematic-hero {
     min-height: 600px;
   }
@@ -285,14 +266,10 @@
     right: 6%;
   }
 
- .levelup-logo {
-  font-size: 82px;
-  letter-spacing: -5px;
-}
-
-.logo-arrow {
-  top: -27px;
-}
+  .levelup-logo {
+    font-size: 82px;
+    letter-spacing: -5px;
+  }
 
   .hero-description {
     max-width: 350px;
@@ -304,75 +281,144 @@
   }
 }
 
-/* MOBILE */
+/* =========================
+   MOBILE
+========================= */
 
 @media (max-width: 500px) {
-
   .cinematic-hero {
-    height: 90vh;
+    height: 90svh;
     min-height: 600px;
   }
 
+  /* Better image positioning on phones */
   .hero-image img {
     object-position: 60% center;
+    transform: scale(1.08);
   }
 
- .hero-overlay {
-  position: absolute;
-  inset: 0;
+  /* Stronger mobile overlay */
+  .hero-overlay {
+    background:
+      linear-gradient(
+        90deg,
+        rgba(0, 0, 0, 0.90) 0%,
+        rgba(0, 0, 0, 0.60) 55%,
+        rgba(0, 0, 0, 0.45) 100%
+      ),
+      linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.90) 0%,
+        rgba(0, 0, 0, 0.25) 55%,
+        rgba(0, 0, 0, 0.65) 100%
+      );
+  }
 
-  background:
-    linear-gradient(
-      90deg,
-      rgba(0, 0, 0, 0.92) 0%,
-      rgba(0, 0, 0, 0.72) 35%,
-      rgba(0, 0, 0, 0.42) 65%,
-      rgba(0, 0, 0, 0.65) 100%
-    ),
-    linear-gradient(
-      0deg,
-      rgba(0, 0, 0, 0.88) 0%,
-      rgba(0, 0, 0, 0.30) 45%,
-      rgba(0, 0, 0, 0.65) 100%
-    );
-}
-
+  /* Top label */
   .hero-label {
     top: 25px;
     left: 6%;
+    right: 6%;
     font-size: 9px;
+    letter-spacing: 2px;
   }
 
+  /* Main content */
   .hero-content {
     left: 6%;
-    top: 52%;
+    right: 6%;
+    top: 50%;
+    transform: translateY(-45%);
+    max-width: none;
   }
 
   .hero-eyebrow {
+    margin-bottom: 16px;
     font-size: 10px;
-    letter-spacing: 3px;
+    letter-spacing: 2.5px;
   }
 
-  .hero-content h1 {
-    font-size: 82px;
-    letter-spacing: -5px;
+  /* Responsive LevelUp logo */
+  .levelup-logo {
+    font-size: clamp(58px, 18vw, 82px);
+    letter-spacing: -4px;
+    line-height: 0.9;
   }
 
   .hero-description {
-    font-size: 13px;
     max-width: 300px;
     margin: 25px 0;
+    font-size: 13px;
+    line-height: 1.6;
   }
 
+  /* Mobile button */
   .hero-button {
     padding: 14px 18px;
+    gap: 20px;
+    font-size: 11px;
   }
 
+  .hero-button span {
+    font-size: 16px;
+  }
+
+  /* Bottom section */
+  .hero-bottom {
+    left: 6%;
+    right: 6%;
+    bottom: 25px;
+  }
+
+  .hero-scroll {
+    font-size: 8px;
+    letter-spacing: 1.5px;
+    gap: 9px;
+  }
+
+  .scroll-line {
+    width: 35px;
+  }
+
+  .scroll-line::after {
+    width: 6px;
+  }
+
+  /* Hide availability on small screens */
   .hero-availability {
     display: none;
   }
+}
+
+/* =========================
+   VERY SMALL PHONES
+========================= */
+
+@media (max-width: 360px) {
+  .cinematic-hero {
+    min-height: 560px;
+  }
+
+  .hero-content {
+    top: 49%;
+  }
+
+  .levelup-logo {
+    font-size: 55px;
+    letter-spacing: -3px;
+  }
+
+  .hero-description {
+    font-size: 12px;
+    max-width: 270px;
+    margin: 22px 0;
+  }
+
+  .hero-button {
+    padding: 13px 16px;
+  }
 
   .hero-bottom {
-    bottom: 25px;
+    bottom: 20px;
   }
 }
